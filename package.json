@@ -1,0 +1,24 @@
+{
+  "name": "npm-ci-cd8391",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snaoyam/npm-ci-cd.git"
+  },
+  "author": "snaoyam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snaoyam/npm-ci-cd/issues"
+  },
+  "homepage": "https://github.com/snaoyam/npm-ci-cd#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
