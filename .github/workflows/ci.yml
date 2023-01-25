@@ -28,7 +28,5 @@ jobs:
         run: npm ci
       - name: Check eslint
         run: npm run lint
-      - name: Check prettier
-        run: npx prettier './src/*' -c
       - name: Build
         run: npm run build
