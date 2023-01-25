@@ -20,8 +20,7 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "linebreak-style": 0,
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "linebreak-style": 0
   },
   "settings": {
     "import/resolver": {
