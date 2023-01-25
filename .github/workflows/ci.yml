@@ -26,7 +26,9 @@ jobs:
           cache: npm
       - name: Install npm dependencies
         run: npm ci
-      - name: Check format
+      - name: Check eslint
         run: npm run lint
+      - name: Check prettier
+        run: npx prettier './src/*' -w
       - name: Build
         run: npm run build
