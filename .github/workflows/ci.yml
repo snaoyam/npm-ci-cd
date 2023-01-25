@@ -12,10 +12,11 @@ jobs:
     name: Build on ${{ matrix.os }} with NodeJs ${{ matrix.node-version }}
     strategy:
         matrix:
-            os: ['ubuntu-latest', 'windows-latest']
+            os: [ubuntu-latest, windows-latest]
             node-version: [14, 16, 18]
             include:
-            - node-version: 16
+            - os: ubuntu-latest
+              node-version: 14
               npm: 6
 
     runs-on: ${{ matrix.os }}
