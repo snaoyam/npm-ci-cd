@@ -1,5 +1,5 @@
-import helloSparcs from '..';
+import helloSparcs from "..";
 
-if(helloSparcs("sparcs") == undefined) {
-  throw new Error("helloSparcs should not return undefined")
+if (helloSparcs("sparcs") === undefined) {
+  throw new Error("helloSparcs should not return undefined");
 }
