@@ -16,7 +16,7 @@ jobs:
             node-version: [14, 16, 18]
             include:
             - node-version: 14
-              npm: 6
+              npm: 7
 
     runs-on: ${{ matrix.os }}
 
