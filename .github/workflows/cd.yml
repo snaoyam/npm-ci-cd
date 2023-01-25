@@ -26,8 +26,11 @@ jobs:
       - name: debug
         run: echo ${{github.ref_name}}
       - name: check package versio
-        if: ${{format('v{}', steps.package-version.outputs.current-version) != github.ref_name}}
-        run: exit 1
+        run: |
+          if [ "v${{ steps.package-version.outputs.current-version }}" != "${{github.ref_name}}" ]; then
+            echo "Tag version and package version should be same"
+            exit 1
+          fi
       - name: Install npm dependencies
         run: npm ci
       - name: Build
