@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    name: Build on ${{ matrix.os }} with NodeJs ${{ matrix.node-version }}
+    name: Build on ${{ matrix.os }} with NodeJS ${{ matrix.node-version }}
     strategy:
         matrix:
             os: [ubuntu-latest, windows-latest]

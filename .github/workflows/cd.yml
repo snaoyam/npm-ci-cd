@@ -21,7 +21,7 @@ jobs:
       - name: get package version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@main
-      - name: check package versio
+      - name: check package version
         run: |
           if [ "v${{ steps.package-version.outputs.current-version }}" != "${{github.ref_name}}" ]; then
             echo "Tag version and package version should be same"
