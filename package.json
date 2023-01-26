@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc -p tsconfig.build.json",
     "lint": "npx eslint ./src/*",
-    "prettier": "npx prettier './src/*' -w"
+    "prettier": "npx prettier './src/*' -c"
   },
   "repository": {
     "type": "git",

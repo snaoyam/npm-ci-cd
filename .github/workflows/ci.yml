@@ -35,6 +35,6 @@ jobs:
       - name: Check eslint
         run: npm run lint
       - name: Check prettier
-        run: npx prettier './src/*' -l
+        run: npm run prettier
       - name: Build
         run: npm run build
